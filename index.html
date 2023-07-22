@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-	<a href="javascript:(function()%7Bfunction getElementByXpath(path) %7Bif(path) %7Breturn document.evaluate(path%2C document%2C null%2C XPathResult.FIRST_ORDERED_NODE_TYPE%2C null).singleNodeValue%3B%7Delse%7Breturn null%3B%7D%7Dlet xpath %3D prompt("Enter the xpath")%3Blet element %3D getElementByXpath(xpath)%3Bif(element) %7Blet innerHtml %3D element.innerHTML%3Blet newHtml %3D '<div role%3D"region" style%3D"border%3A3px solid red" aria-label%3D"Component">' %2B innerHtml %2B '<%2Fdiv>'%3Belement.innerHTML %3D newHtml%3B%7D%7D)()
-○">Component Finder Bookmarklet</a>
+	<a class="bookmarklet" href="javascript:(function()%7Bjavascript%3A(function()%257Bfunction%2520getElementByXpath(path)%2520%257Bif(path)%2520%257Breturn%2520document.evaluate(path%252C%2520document%252C%2520null%252C%2520XPathResult.FIRST_ORDERED_NODE_TYPE%252C%2520null).singleNodeValue%253B%257Delse%257Breturn%2520null%253B%257D%257Dlet%2520xpath%2520%253D%2520prompt(%2522Enter%2520the%2520xpath%2522)%253Blet%2520element%2520%253D%2520getElementByXpath(xpath)%253Bif(element)%2520%257Blet%2520innerHtml%2520%253D%2520element.innerHTML%253Blet%2520newHtml%2520%253D%2520'%253Cdiv%2520role%253D%2522region%2522%2520style%253D%2522border%253A3px%2520solid%2520red%2522%2520aria-label%253D%2522Component%2522%253E'%2520%252B%2520innerHtml%2520%252B%2520'%253C%252Fdiv%253E'%253Belement.innerHTML%2520%253D%2520newHtml%253B%257D%257D)()%7D)()">Component Finder</a>
   </body>
 </html>
