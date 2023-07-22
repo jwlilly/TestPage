@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-	<a href="https://afb.org">AFB.org</a>
+	<a href="javascript:(function()%7Bfunction getElementByXpath(path) %7Bif(path) %7Breturn document.evaluate(path%2C document%2C null%2C XPathResult.FIRST_ORDERED_NODE_TYPE%2C null).singleNodeValue%3B%7Delse%7Breturn null%3B%7D%7Dlet xpath %3D prompt("Enter the xpath")%3Blet element %3D getElementByXpath(xpath)%3Bif(element) %7Blet innerHtml %3D element.innerHTML%3Blet newHtml %3D '<div role%3D"region" style%3D"border%3A3px solid red" aria-label%3D"Component">' %2B innerHtml %2B '<%2Fdiv>'%3Belement.innerHTML %3D newHtml%3B%7D%7D)()
+○">Component Finder Bookmarklet</a>
   </body>
 </html>
