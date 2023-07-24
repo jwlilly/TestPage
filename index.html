@@ -8,6 +8,6 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-	<a class="bookmarklet" href="javascript:(function()%7Bjavascript%3A(function()%257Bfunction%2520getElementByXpath(path)%2520%257Bif(path)%2520%257Breturn%2520document.evaluate(path%252C%2520document%252C%2520null%252C%2520XPathResult.FIRST_ORDERED_NODE_TYPE%252C%2520null).singleNodeValue%253B%257Delse%257Breturn%2520null%253B%257D%257Dlet%2520xpath%2520%253D%2520prompt(%2522Enter%2520the%2520xpath%2522)%253Blet%2520element%2520%253D%2520getElementByXpath(xpath)%253Bif(element)%2520%257Blet%2520innerHtml%2520%253D%2520element.innerHTML%253Blet%2520newHtml%2520%253D%2520'%253Cdiv%2520role%253D%2522region%2522%2520style%253D%2522border%253A3px%2520solid%2520red%2522%2520aria-label%253D%2522Component%2522%253E'%2520%252B%2520innerHtml%2520%252B%2520'%253C%252Fdiv%253E'%253Belement.innerHTML%2520%253D%2520newHtml%253B%257D%257D)()%7D)()">Component Finder Bookmarklet</a>
-  </body>
+	  <a href="javascript:(function()%7Bfunction%20getElementByXpath(path)%20%7B%0A%20%20if(path)%20%7B%0A%20%20%20%20return%20document.evaluate(path%2C%20document%2C%20null%2C%20XPathResult.FIRST_ORDERED_NODE_TYPE%2C%20null).singleNodeValue%3B%0A%20%20%7D%0A%20%20else%0A%20%20%20%20%7B%0A%20%20%20%20return%20null%3B%0A%20%20%20%20%7D%0A%7D%0A%0Alet%20xpath%20%3D%20prompt(%22Enter%20the%20xpath%22)%3B%0Alet%20element%20%3D%20getElementByXpath(xpath)%3B%0Aif(element)%20%7B%0A%20%20let%20innerHtml%20%3D%20element.innerHTML%3B%0A%20%20let%20newHtml%20%3D%20'%3Cdiv%20role%3D%22region%22%20style%3D%22border%3A3px%20solid%20red%22%20aria-label%3D%22Component%22%3E'%20%2B%20innerHtml%20%2B%20'%3C%2Fdiv%3E'%3B%0A%20%20element.innerHTML%20%3D%20newHtml%3B%0A%7D%7D)()%3B">Component Finder Bookmarklet</a>
+	</body>
 </html>
